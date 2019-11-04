@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/training-app/static/css/main.d6f53420.chunk.css",
+    "main.js": "/training-app/static/js/main.9a5d74c3.chunk.js",
+    "main.js.map": "/training-app/static/js/main.9a5d74c3.chunk.js.map",
+    "runtime~main.js": "/training-app/static/js/runtime~main.547cb7bf.js",
+    "runtime~main.js.map": "/training-app/static/js/runtime~main.547cb7bf.js.map",
+    "static/css/2.0624914a.chunk.css": "/training-app/static/css/2.0624914a.chunk.css",
+    "static/js/2.b9136a60.chunk.js": "/training-app/static/js/2.b9136a60.chunk.js",
+    "static/js/2.b9136a60.chunk.js.map": "/training-app/static/js/2.b9136a60.chunk.js.map",
+    "index.html": "/training-app/index.html",
+    "precache-manifest.db0633ce01d13cc0d0bee63d6a3af2b9.js": "/training-app/precache-manifest.db0633ce01d13cc0d0bee63d6a3af2b9.js",
+    "service-worker.js": "/training-app/service-worker.js",
+    "static/css/2.0624914a.chunk.css.map": "/training-app/static/css/2.0624914a.chunk.css.map",
+    "static/css/main.d6f53420.chunk.css.map": "/training-app/static/css/main.d6f53420.chunk.css.map"
+  }
+}
