@@ -22,7 +22,7 @@ const styles = {
 export default function HandMatrix() {
 
   function Row({ index }) {
-    const array = new Array()
+    const array = []
     let k
     for (k = 0; k < 13; k++) {
       array.push(
