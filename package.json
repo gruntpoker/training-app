@@ -2,6 +2,7 @@
   "name": "gruntpoker",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://gruntpoker.github.io/training-app",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "prange": "^0.2.3",
@@ -17,6 +18,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public"
   },
