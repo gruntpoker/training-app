@@ -1,4 +1,11 @@
 import React from 'react';
+import open from './open'
+import { useLocation } from 'react-router-dom'
+import { pfIndexToPocket } from './HandMappings.js'
+
+function useQuery() {
+  return new URLSearchParams(useLocation().search);
+}
 
 const styles = {
   root: {
@@ -19,38 +26,50 @@ const styles = {
   },
 }
 
-export default function HandMatrix() {
+function Cell({action, index, raisePercent}){
+  const backgroundColor = action === 'r' ? 'green': action === 'c' ? 'yellow' : 'white' 
+  return(
+    <div style={{...styles.cell, backgroundColor}}>{pfIndexToPocket[index]}</div>
+  )
 
-  function Row({ index }) {
-    const array = []
-    let k
-    for (k = 0; k < 13; k++) {
-      array.push(
-        <div key={index * 13 + k} style={styles.cell}>{index * 13 + k}</div>
-      )
-    }
-    return (
-      <div style={styles.row}>
-        {array}
-      </div>
-    );
-  }
-
-  function Matrix() {
-    const array = new Array()
-    let k
-    for (k = 0; k < 13; k++) {
-      array.push(
-        <Row key={k} index={k} />
-      )
-    }
-    return (
-      <React.Fragment>
-        {array}
-      </React.Fragment>
+}
+function Row({ index }) {
+  const array = []
+  let k
+  for (k = 0; k < 13; k++) {
+    array.push(
+      <Cell 
+        key={index * 13 + k}
+        index={index * 13 + k}
+        action={open[1][index * 13 + k].action}
+        >
+        </Cell>
     )
   }
+  return (
+    <div style={styles.row}>
+      {array}
+    </div>
+  );
+}
 
+function Matrix() {
+  
+  const array = new Array()
+  let k
+  for (k = 0; k < 13; k++) {
+    array.push(
+      <Row key={k} index={k} />
+    )
+  }
+  return (
+    <React.Fragment>
+      {array}
+    </React.Fragment>
+  )
+}
+
+export default function HandMatrix() {
   return (
     <div styles={styles.root}>
       {<Matrix />}
