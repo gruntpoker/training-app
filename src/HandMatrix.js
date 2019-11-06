@@ -26,10 +26,10 @@ const styles = {
   },
 }
 
-function Cell({action, index, raisePercent}){
-  const backgroundColor = action === 'r' ? 'green': action === 'c' ? 'yellow' : 'white' 
-  return(
-    <div style={{...styles.cell, backgroundColor}}>{pfIndexToPocket[index]}</div>
+function Cell({ action, index, raisePercent }) {
+  const backgroundColor = action === 'r' ? 'green' : action === 'c' ? 'yellow' : 'white'
+  return (
+    <div style={{ ...styles.cell, backgroundColor }}>{pfIndexToPocket[index]}</div>
   )
 
 }
@@ -38,12 +38,12 @@ function Row({ index }) {
   let k
   for (k = 0; k < 13; k++) {
     array.push(
-      <Cell 
+      <Cell
         key={index * 13 + k}
         index={index * 13 + k}
         action={open[1][index * 13 + k].action}
-        >
-        </Cell>
+      >
+      </Cell>
     )
   }
   return (
@@ -53,8 +53,7 @@ function Row({ index }) {
   );
 }
 
-function Matrix() {
-  
+export default function HandMatrix() {
   const array = new Array()
   let k
   for (k = 0; k < 13; k++) {
@@ -63,16 +62,8 @@ function Matrix() {
     )
   }
   return (
-    <React.Fragment>
-      {array}
-    </React.Fragment>
-  )
-}
-
-export default function HandMatrix() {
-  return (
     <div styles={styles.root}>
-      {<Matrix />}
+      {array}
     </div>
-  );
+  )
 }

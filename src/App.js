@@ -1,16 +1,11 @@
 import React from 'react';
-import './App.css';
-import ScenarioList from './ScenarioList'
-import PositionButtons from './PositionButtons'
-import Analysis from './Analysis'
 import {
   BrowserRouter as Router,
   Switch,
-  Route,
-  Link,
-  useRouteMatch,
-  useParams
+  Route
 } from "react-router-dom";
+import ScenarioSelector from './ScenarioSelector';
+import HandMatrix from './HandMatrix'
 
 export default function App() {
   return (
@@ -18,13 +13,10 @@ export default function App() {
       <div>
         <Switch>
           <Route path="/analyze">
-            <Analysis></Analysis>
-          </Route>
-          <Route path="/position">
-            <PositionButtons />
+            <HandMatrix></HandMatrix>
           </Route>
           <Route path="/">
-            <ScenarioList />
+            <ScenarioSelector />
           </Route>
         </Switch>
       </div>

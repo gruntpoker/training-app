@@ -7,7 +7,6 @@
     "bootstrap": "^4.3.1",
     "prange": "^0.2.3",
     "react": "^16.11.0",
-    "react-bootstrap": "^1.0.0-beta.14",
     "react-dom": "^16.11.0",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.0.1",
@@ -19,9 +18,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,10 +36,6 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^5.1.10",
-    "@storybook/addon-links": "^5.1.10",
-    "@storybook/addons": "^5.1.10",
-    "@storybook/react": "^5.1.10",
     "gh-pages": "^2.1.1"
   }
 }
