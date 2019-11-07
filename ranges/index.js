@@ -1,13 +1,13 @@
-import threeBet from './3bet'
-import fourBet from './4bet'
-import facingRaise from './facing_raise'
-import open from './open'
-import squeeze from './squeeze'
+const threeBet = require('./3bet')
+const fourBet = require('./4bet')
+const facingRaise = require('./facing_raise')
+const open = require('./open/index.js')
+const squeeze = require('./squeeze')
 
-export default {
-    threeBet,
-    fourBet,
-    facing_raise,
-    open,
-    squeeze
+module.exports = {
+   threeBet,
+   fourBet,
+   facingRaise,
+   open,
+   squeeze
 }

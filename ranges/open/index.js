@@ -1,9 +1,9 @@
-import BTN from './BTN'
-import CO from './CO'
-import HJ from './HJ'
-import SB from './SB'
-import UTG from './UTG'
-export default {
+const  BTN = require('./BTN.js')
+const  CO = require('./CO')
+const  HJ = require('./HJ')
+const  SB = require('./SB')
+const  UTG = require('./UTG')
+module.exports = {
     BTN,
     CO,
     HJ,

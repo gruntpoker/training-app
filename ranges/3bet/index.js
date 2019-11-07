@@ -1,10 +1,10 @@
-import UTG_BB from './UTG_BB'
-import UTG_BTN from './UTG_BTN'
-import UTG_CO from './UTG_CO'
-import UTG_HJ from './UTG_HJ'
-import UTG_SB from './UTG_SB'
+const UTG_BB = require('./UTG_BB')
+const UTG_BTN = require('./UTG_BTN')
+const UTG_CO = require('./UTG_CO')
+const UTG_HJ = require('./UTG_HJ')
+const UTG_SB = require('./UTG_SB')
 
-export default {
+module.exports = {
     UTG_BB,
     UTG_BTN,
     UTG_CO,

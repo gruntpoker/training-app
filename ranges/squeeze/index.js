@@ -1,20 +1,20 @@
-import BB_CO_BTN from './BB_CO_BTN'
-import BB_CO_SB from './BB_CO_SB'
-import BB_HJ_BTN from './BB_HJ_BTN'
-import BB_HJ_CO from './BB_HJ_CO'
-import BB_HJ_SB from './BB_HJ_SB'
-import BB_UTG_BTN from './BB_UTG_BTN'
-import BB_UTG_CO from './BB_UTG_CO'
-import BB_UTG_HJ from './BB_UTG_HJ'
-import BB_UTG_SB from './BB_UTG_SB'
-import SB_CO_BTN from './SB_CO_BTN'
-import SB_HJ_BTN from './SB_HJ_BTN'
-import SB_HJ_CO from './SB_HJ_CO'
-import SB_UTG_BTN from './SB_UTG_BTN'
-import SB_UTG_CO from './SB_UTG_CO'
-import SB_UTG_HJ from './SB_UTG_HJ'
+const BB_CO_BTN = require('./BB_CO_BTN')
+const BB_CO_SB = require('./BB_CO_SB')
+const BB_HJ_BTN = require('./BB_HJ_BTN')
+const BB_HJ_CO = require('./BB_HJ_CO')
+const BB_HJ_SB = require('./BB_HJ_SB')
+const BB_UTG_BTN = require('./BB_UTG_BTN')
+const BB_UTG_CO = require('./BB_UTG_CO')
+const BB_UTG_HJ = require('./BB_UTG_HJ')
+const BB_UTG_SB = require('./BB_UTG_SB')
+const SB_CO_BTN = require('./SB_CO_BTN')
+const SB_HJ_BTN = require('./SB_HJ_BTN')
+const SB_HJ_CO = require('./SB_HJ_CO')
+const SB_UTG_BTN = require('./SB_UTG_BTN')
+const SB_UTG_CO = require('./SB_UTG_CO')
+const SB_UTG_HJ = require('./SB_UTG_HJ')
 
-export default {
+module.exports = {
     BB_CO_BTN,
     BB_CO_SB,
     BB_HJ_BTN,
