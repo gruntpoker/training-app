@@ -58,11 +58,12 @@ function isDisabled(situation, position, hero, villain, step) {
     (situation === 'squeeze' && hero === 5 && step === 1 && position > 3) ||
     (situation === 'squeeze' && hero === 6 && step === 1 && position > 4)
 }
-function createQuery(hero, villain, caller) {
+function createQuery(hero, villain, caller, situation) {
   const query = new URLSearchParams()
   if (hero) query.set('hero', hero)
   if (villain) query.set('villain', villain)
   if (caller) query.set('caller', caller)
+  if (situation) query.set('situation', situation)
   return query.toString()
 }
 function ScenarioSelector() {
@@ -119,7 +120,7 @@ function ScenarioSelector() {
       <p>
         {(seats[players[step]] > 0) && <Link to={{
           pathname: "/analyze",
-          search: createQuery(seats.hero, seats.villain, seats.caller)
+          search: createQuery(seats.hero, seats.villain, seats.caller, situation)
         }}>
           <button type="button" class="btn btn-primary">Analyze</button>
         </Link>}
