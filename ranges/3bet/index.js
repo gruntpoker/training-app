@@ -12,7 +12,7 @@ const CO_SB = require('./CO_SB')
 const CO_BB = require('./CO_BB')
 const BTN_SB = require('./BTN_SB')
 const BTN_BB = require('./BTN_SB')
-const SB_BB = require('SB_BB')
+const SB_BB = require('./SB_BB')
 
 module.exports = {
     UTG_BB,
