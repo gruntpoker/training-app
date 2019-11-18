@@ -5,15 +5,19 @@ import {
   Route
 } from "react-router-dom";
 import ScenarioSelector from './ScenarioSelector';
-import HandMatrix from './HandMatrix'
+import CashRanges from './CashRanges'
+import HeadsUp from './HeadsUp'
 
 export default function App() {
   return (
     <Router>
       <div>
         <Switch>
+        <Route path="/heads-up">
+            <HeadsUp></HeadsUp>>
+          </Route>
           <Route path="/analyze">
-            <HandMatrix></HandMatrix>
+            <CashRanges></CashRanges>
           </Route>
           <Route path="/">
             <ScenarioSelector />
