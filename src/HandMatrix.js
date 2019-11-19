@@ -28,9 +28,8 @@ function Row({ index, ranges, Cell }) {
   ranges.forEach((c, k) => {
     array.push(
       <Cell
-        key={index * 13 + k}
         index={index * 13 + k}
-        action={c.action}
+        value={c}
       >
       </Cell>
     )
@@ -41,6 +40,7 @@ function Row({ index, ranges, Cell }) {
     </div>
   );
 }
+
 export default function HandMatrix({range, Cell}) {
   return (
     <div styles={styles.root}>

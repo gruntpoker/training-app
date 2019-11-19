@@ -25,7 +25,8 @@ function buildFetchURL(situation, hero, villain, caller) {
     }
     return url
 }
-const Cell = function ({ action, index, raisePercent }) {
+const Cell = function ({ value, index }) {
+    const action = value.action
     const backgroundColor = action === 'r' ? 'green' : action === 'c' ? 'yellow' : 'white'
     return (
         <div style={{ ...styles.cell, backgroundColor }}>{pfIndexToPocket[index]}</div>
