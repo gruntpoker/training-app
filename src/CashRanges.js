@@ -2,9 +2,7 @@ import React, { useEffect, useState } from 'react'
 import HandMatrix from './HandMatrix'
 import { pfIndexToPocket } from './HandMappings'
 import { useLocation } from 'react-router-dom'
-function useQuery() {
-    return new URLSearchParams(useLocation().search);
-}
+
 const styles = {
     cell: {
         width: "40px",
