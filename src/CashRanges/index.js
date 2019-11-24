@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import HandMatrix from './HandMatrix'
-import { pfIndexToPocket } from './HandMappings'
+import HandMatrix from '../Components/HandMatrix'
+import { pfIndexToPocket } from '../Components/handMappings'
 import { useLocation } from 'react-router-dom'
 
 const styles = {

@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 import ScenarioSelector from './ScenarioSelector';
 import CashRanges from './CashRanges'
-import HeadsUp from './HeadsUp'
+import HeadsUp from './HeadsUP/HeadsUp'
 
 export default function App() {
   return (
@@ -14,7 +14,7 @@ export default function App() {
       <div>
         <Switch>
         <Route path="/heads-up">
-            <HeadsUp></HeadsUp>>
+            <HeadsUp></HeadsUp>
           </Route>
           <Route path="/analyze">
             <CashRanges></CashRanges>
