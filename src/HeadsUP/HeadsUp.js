@@ -60,7 +60,7 @@ export default function() {
   return (
     <div>
       <HandMatrix range={range} Cell={Cell} />
-      {actions.map(action => Button(action))}}{" "}
+      {Object.keys(actionColors).map(action => Button(action))}}{" "}
     </div>
   );
 }
