@@ -1,4 +1,4 @@
-export default function(app) {
+module.exports = function(app) {
   // app.get('/ranges/open/:hero', function (req, res) {
   //     res.send(ranges.open[positions[req.params.hero]])
   // })
@@ -23,4 +23,4 @@ export default function(app) {
   //     const caller = positions[req.params.caller]
   //     res.send(ranges.squeeze[hero+'_'+villain+'_'+caller])
   // })
-}
+};
