@@ -34,6 +34,7 @@ export default function App({ match }) {
           <Route path="/range-builder">
             <RangeBuilder />
           </Route>
+          <Route path="/range-builder">Range-Builder</Route>
         </Switch>
       </div>
     </Router>
