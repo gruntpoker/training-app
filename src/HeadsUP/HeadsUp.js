@@ -33,20 +33,17 @@ const actionName = {
   limp: "Limp"
 };
 
-function Button(action, pos) {
-  return;
-}
-
 export default function() {
   const bb = 25;
-  const [range, setRange] = useState(getInitRange());
-  const [action, setAction] = useState(null);
-  const [pos, setPos] = useState("sb");
-  setRange(processRange(bb, pos, action));
-  const onClick = () => {
-    setAction(action);
-    setRange(range);
-  };
+  // const [range, setRange] = useState(getInitRange());
+  // const [action, setAction] = useState(null);
+  // const [pos, setPos] = useState("sb");
+  //setRange(processRange(bb, pos, action));
+  // const onClick = () => {
+  //   setAction(action);
+  //   setRange(range);
+  // };
+  const range = {};
   const Button = action => (
     <button
       type="button"
